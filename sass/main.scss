@@ -1,3 +1,13 @@
 @import "tailwindcss/base.css";
 @import "tailwindcss/components.css";
 @import "tailwindcss/utilities.css";
+
+header {
+    height: 100vh;
+    background-color: blue;
+    @apply flex justify-center items-start;
+}
+
+h1 {
+    @apply text-center text-3xl font-bold text-white;
+}
