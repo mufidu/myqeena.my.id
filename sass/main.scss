@@ -2,13 +2,25 @@
 @import "tailwindcss/components.css";
 @import "tailwindcss/utilities.css";
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 html {
     overflow: hidden;
     font-family: "Nunito", sans-serif;
 }
 
 body {
-    background-color: antiquewhite;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(226, 238, 215, 0.8),
+            rgba(226, 238, 215, 0.8)
+        ),
+        url(../imgs/tas.jpg);
+    position: relative;
+    background-size: auto;
+    background-position: center;
 }
 
 header {
@@ -30,20 +42,26 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    text-decoration: none;
 
     a {
         display: flex;
         padding: 1rem;
         border-radius: 1rem;
+        color: black;
         transition: all 0.3s ease;
+        box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.2);
+        text-decoration: none;
+        opacity: 0.8;
+
         svg {
             margin-right: 0.3rem;
         }
 
         &:hover {
-            transform: scale(1.05);
-            text-decoration: none;
-            box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+            transform: scale(1.08);
+            opacity: 1;
+            box-shadow: 0.5rem 1rem 1.5rem rgba(0, 0, 0, 0.2);
         }
 
         &:visited {
@@ -54,6 +72,7 @@ h1 {
 
 #insta {
     background-color: pink;
+    margin-bottom: -1rem;
 }
 
 #wa {

@@ -16,6 +16,7 @@
             href="./icon/favicon.ico"
             type="image/x-icon"
         />
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         <title>MyQeena Purwakarta</title>
     </head>
     <body>
@@ -26,6 +27,7 @@
             <div class="socmed">
                 <a
                     id="insta"
+                    class="scrolled"
                     href="https://www.instagram.com/tasmyqeena.distributor/"
                     ><svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +43,10 @@
                     </svg>
                     Instagram</a
                 >
-                <a id="wa" href="https://bit.ly/WhatsAppMyQeena"
+                <a
+                    id="wa"
+                    class="scrolled"
+                    href="https://bit.ly/WhatsAppMyQeena"
                     ><svg
                         enable-background="new 0 0 16 16"
                         version="1.1"
@@ -71,5 +76,13 @@
                 ></iframe>
             </div>
         </main>
+        <script>
+            ScrollReveal().reveal(".socmed:first-child", {
+                reset: true,
+                delay: 350,
+                interval: 150,
+                duration: 1300,
+            });
+        </script>
     </body>
 </html>
