@@ -4,6 +4,7 @@
 
 html {
     overflow: hidden;
+    font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -15,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -2rem;
+    margin-bottom: -3rem;
 }
 
 h1 {
@@ -44,6 +45,10 @@ h1 {
             text-decoration: none;
             box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
         }
+
+        &:visited {
+            color: black;
+        }
     }
 }
 
@@ -53,7 +58,7 @@ h1 {
 
 #wa {
     background-color: aquamarine;
-    margin-bottom: -2rem;
+    margin-bottom: -3.5rem;
 }
 
 .location {
