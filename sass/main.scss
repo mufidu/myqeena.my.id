@@ -2,8 +2,34 @@
 @import "tailwindcss/components.css";
 @import "tailwindcss/utilities.css";
 
-html.sr .load-hidden {
-    visibility: hidden;
+@keyframes dariKiri {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes dariKanan {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 html {
@@ -73,11 +99,13 @@ h1 {
 #insta {
     background-color: pink;
     margin-bottom: -1rem;
+    animation: dariKanan 1.2s ease-out;
 }
 
 #wa {
     background-color: aquamarine;
     margin-bottom: -3.5rem;
+    animation: dariKiri 1.2s ease-out;
 }
 
 .location {
