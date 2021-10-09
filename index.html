@@ -22,6 +22,7 @@
         <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
         <!-- We use StatCrab to protect your privacy -->
         <script src="https://app.statcrab.com/embed/crab.js" data-project="npqVg7" defer></script><!-- StatCrab.com -->
+        <script src="https://cdn.jsdelivr.net/gh/Swetrix/swetrix-js@main/dist/swetrix.js" defer></script>
     </head>
     <body>
         <header>
@@ -80,5 +81,15 @@
                 ></iframe>
             </div>
         </main>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialising the script with the Project ID
+            // you can find in the dashboard
+            swetrix.init('4d1jGtLsVlQX')
+
+            // Tracking page views
+            swetrix.trackViews()
+        })
+        </script>
     </body>
 </html>
